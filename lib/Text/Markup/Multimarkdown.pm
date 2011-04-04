@@ -1,15 +1,15 @@
-package Text::Markup::Markdown;
+package Text::Markup::Multimarkdown;
 
 use 5.8.1;
 use strict;
 use File::BOM qw(open_bom);
-use Text::Markdown ();
+use Text::MultiMarkdown ();
 
 our $VERSION = '0.12';
 
 sub parser {
     my ($file, $encoding, $opts) = @_;
-    my $md = Text::Markdown->new(@{ $opts || [] });
+    my $md = Text::MultiMarkdown->new(@{ $opts || [] });
     open_bom my $fh, $file, ":encoding($encoding)";
     local $/;
     my $html = $md->markdown(<$fh>);
@@ -30,7 +30,7 @@ __END__
 
 =head1 Name
 
-Text::Markup::Markdown - Markdown parser for Text::Markup
+Text::Markup::Multimarkdown - MultiMarkdown parser for Text::Markup
 
 =head1 Synopsis
 
@@ -38,34 +38,28 @@ Text::Markup::Markdown - Markdown parser for Text::Markup
 
 =head1 Description
 
-This is the L<Markdown|http://daringfireball.net/projects/markdown/> parser
+This is the L<MultiMarkdown|http://fletcherpenney.net/multimarkdown/> parser
 for L<Text::Markup>. It reads in the file (relying on a
 L<BOM|http://www.unicode.org/unicode/faq/utf_bom.html#BOM>), hands it off to
-L<Text::Markdown> for parsing, and then returns the generated HTML as an
+L<Text::MultiMarkdown> for parsing, and then returns the generated HTML as an
 encoded UTF-8 string with an C<http-equiv="Content-Type"> element identifying
 the encoding as UTF-8.
 
-It recognizes files with the following extensions as Markdown:
+It recognizes files with the following extensions as MultiMarkdown:
 
 =over
 
-=item F<.md>
+=item F<.mmd>
 
-=item F<.mkd>
+=item F<.mmkd>
 
-=item F<.mkdn>
+=item F<.mmkdn>
 
-=item F<.mdown>
+=item F<.mmdown>
 
-=item F<.markdown>
+=item F<.multimarkdown>
 
 =back
-
-=head1 See Also
-
-L<National Funk Congress Deadlocked On Get Up/Get Down
-Issue|http://www.theonion.com/articles/national-funk-congress-deadlocked-on-get-upget-dow,625/>.
-MarkI<up> or MarkI<down>?
 
 =head1 Author
 

@@ -1,4 +1,4 @@
-Text/Markup version 0.11
+Text/Markup version 0.12
 ========================
 
 This library's module, Text::Markup, provides an single interface for parsing
@@ -7,6 +7,7 @@ currently supports the following markups:
 
 * [HTML](http://whatwg.org/html)
 * [Markdown](http://daringfireball.net/projects/markdown/)
+* [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
 * [MediaWiki](http://en.wikipedia.org/wiki/Help:Contents/Editing_Wikipedia)
 * [Pod](http://search.cpan.org/perldoc?perlpod)
 * [Textile](http://textism.com/tools/textile/)
@@ -41,8 +42,6 @@ Text-Markup requires the following modules:
 * Text::MediawikiFormat 1.0
 * Text::Textile 2.10
 * Text::Trac 0.10
-
-* Text::Markdown 1.000004
 
 Copyright and Licence
 ---------------------

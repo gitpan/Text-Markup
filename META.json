@@ -4,7 +4,7 @@
       "David E. Wheeler <david@justatheory.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.3703, CPAN::Meta::Converter version 2.110440",
+   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.110930",
    "license" : [
       "perl_5"
    ],
@@ -37,6 +37,7 @@
             "Pod::Simple::XHTML" : "3.15",
             "Text::Markdown" : "1.000004",
             "Text::MediawikiFormat" : "1.0",
+            "Text::MultiMarkdown" : "1.000028",
             "Text::Textile" : "2.10",
             "Text::Trac" : "0.10",
             "perl" : "5.008001"
@@ -46,35 +47,39 @@
    "provides" : {
       "Text::Markup" : {
          "file" : "lib/Text/Markup.pm",
-         "version" : "0.11"
+         "version" : "0.12"
       },
       "Text::Markup::HTML" : {
          "file" : "lib/Text/Markup/HTML.pm",
-         "version" : "0.11"
+         "version" : "0.12"
       },
       "Text::Markup::Markdown" : {
          "file" : "lib/Text/Markup/Markdown.pm",
-         "version" : "0.11"
+         "version" : "0.12"
       },
       "Text::Markup::Mediawiki" : {
          "file" : "lib/Text/Markup/Mediawiki.pm",
-         "version" : "0.11"
+         "version" : "0.12"
+      },
+      "Text::Markup::Multimarkdown" : {
+         "file" : "lib/Text/Markup/Multimarkdown.pm",
+         "version" : "0.12"
       },
       "Text::Markup::None" : {
          "file" : "lib/Text/Markup/None.pm",
-         "version" : "0.11"
+         "version" : "0.12"
       },
       "Text::Markup::Pod" : {
          "file" : "lib/Text/Markup/Pod.pm",
-         "version" : "0.11"
+         "version" : "0.12"
       },
       "Text::Markup::Textile" : {
          "file" : "lib/Text/Markup/Textile.pm",
-         "version" : "0.11"
+         "version" : "0.12"
       },
       "Text::Markup::Trac" : {
          "file" : "lib/Text/Markup/Trac.pm",
-         "version" : "0.11"
+         "version" : "0.12"
       }
    },
    "release_status" : "stable",
@@ -90,5 +95,5 @@
          "url" : "http://github.com/theory/text-markup/tree/"
       }
    },
-   "version" : "0.11"
+   "version" : "0.12"
 }

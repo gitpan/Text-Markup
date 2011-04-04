@@ -3,8 +3,12 @@
 use strict;
 use warnings;
 use Test::More 0.96;
-use Text::Markup;
 use File::Spec::Functions qw(catfile);
+use Carp;
+
+# Need to have at least one test outside subtests, in case no subtests are run
+# at all. So it might as well be this.
+BEGIN { use_ok 'Text::Markup' or die; }
 
 sub slurp($) {
     my $file = shift;
@@ -52,3 +56,4 @@ pod,Text::Markup::Pod,Pod::Simple::XHTML 3.15,pod,pm,pl
 trac,Text::Markup::Trac,Text::Trac 0.10,trac,trc
 textile,Text::Markup::Textile,Text::Textile 2.10,textile
 mediawiki,Text::Markup::Mediawiki,Text::MediawikiFormat 1.0,wiki,mwiki,mediawiki
+multimarkdown,Text::Markup::Multimarkdown,Text::MultiMarkdown 1.000033,mmd,mmkdn,mmkd,mmdown,mmarkdown

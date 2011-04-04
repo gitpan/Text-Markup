@@ -5,16 +5,17 @@ use strict;
 use Text::Markup::None;
 use Carp;
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 my %_PARSER_FOR;
 my %REGEX_FOR = (
-    html      => qr{x?html?},
-    markdown  => qr{md|mkdn?|mdown|markdown},
-    pod       => qr{p(?:od|m|l)},
-    textile   => qr{textile},
-    trac      => qr{tra?c},
-    mediawiki => qr{(?:m(?:edia)?)?wiki},
+    html          => qr{x?html?},
+    markdown      => qr{m(?:d(?:own)?|kdn?|arkdown)},
+    multimarkdown => qr{mm(?:d(?:own)?|kdn?|arkdown)},
+    pod           => qr{p(?:od|m|l)},
+    textile       => qr{textile},
+    trac          => qr{tra?c},
+    mediawiki     => qr{(?:m(?:edia)?)?wiki},
 );
 
 sub register {
@@ -119,6 +120,8 @@ This distribution includes support for a number of markup formats:
 
 =item * L<Markdown|http://daringfireball.net/projects/markdown/>
 
+=item * L<MultiMarkdown|http://fletcherpenney.net/multimarkdown/>
+
 =item * L<MediaWiki|http://en.wikipedia.org/wiki/Help:Contents/Editing_Wikipedia>
 
 =item * L<Pod|perlpod>
@@ -190,7 +193,7 @@ Parses a file and return the generated HTML. Supported parameters:
 
 =item C<file>
 
-The file from which to read the markup to be parsed.
+The file from which to read the markup to be parsed. Required.
 
 =item C<format>
 
