@@ -7,6 +7,7 @@ lib/Text/Markup/Mediawiki.pm
 lib/Text/Markup/Multimarkdown.pm
 lib/Text/Markup/None.pm
 lib/Text/Markup/Pod.pm
+lib/Text/Markup/Rest.pm
 lib/Text/Markup/Textile.pm
 lib/Text/Markup/Trac.pm
 Makefile.PL
@@ -15,12 +16,14 @@ META.json
 META.yml
 README.md
 t/base.t
+t/empty.txt
 t/formats.t
 t/html/html.html
 t/html/markdown.html
 t/html/mediawiki.html
 t/html/multimarkdown.html
 t/html/pod.html
+t/html/rest.html
 t/html/textile.html
 t/html/trac.html
 t/markups/html.txt
@@ -28,6 +31,7 @@ t/markups/markdown.txt
 t/markups/mediawiki.txt
 t/markups/multimarkdown.txt
 t/markups/pod.txt
+t/markups/rest.txt
 t/markups/textile.txt
 t/markups/trac.txt
 t/pod-coverage.t

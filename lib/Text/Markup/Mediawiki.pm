@@ -5,13 +5,14 @@ use strict;
 use File::BOM qw(open_bom);
 use Text::MediawikiFormat '1.0';
 
-our $VERSION = '0.14';
+our $VERSION = '0.15';
 
 sub parser {
     my ($file, $encoding, $opts) = @_;
     open_bom my $fh, $file, ":encoding($encoding)";
     local $/;
     my $html = Text::MediawikiFormat::format(<$fh>, @{ $opts || [] });
+    return unless $html =~ /\S/;
     utf8::encode($html);
     return qq{<html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
