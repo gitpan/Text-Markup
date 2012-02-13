@@ -8,6 +8,7 @@ lib/Text/Markup/Multimarkdown.pm
 lib/Text/Markup/None.pm
 lib/Text/Markup/Pod.pm
 lib/Text/Markup/Rest.pm
+lib/Text/Markup/rst2html_lenient.py
 lib/Text/Markup/Textile.pm
 lib/Text/Markup/Trac.pm
 Makefile.PL

@@ -9,3 +9,29 @@ but I guess this ``code`` is enough.
 
 .. __: http://docutils.sourceforge.net/
 
+.. unknown:: arg1 arg2
+    :option: foo
+
+    We also support unknown directive, so that no content is lost if reST
+    specialization is parsed.
+
+Of course we may also find :unknown:`new roles`.
+
+.. module:: mymodule
+
+    This is a module that doesn't *exist*
+
+    .. function:: foo()
+
+        In Sphinx documentation you could find this stuff.
+
+.. toctree::
+
+    we
+    dont
+    care
+
+.. code-block:: python
+
+    print "I have no title"
+

@@ -1,5 +1,16 @@
 Revision history for Perl extension Text-Markup.
 
+0.16  2012-02-13T17:23:00Z
+     - Rest support now uses its own implementation of `rst2html` so that it
+       can render specialized reST documents, such as Sphinx files, in a more
+       forgiving way: it preserves the content of unknown directives while not
+       emulating specialized rendering. Written by Daniele Varrazzo.
+     - Improved handling of Sphinx directives in Rest output. Most directives
+       are stripped out, although `function` directives now turn out much
+       nicer. Props to Daniele Varrazzo for the work on the Rest parser.
+     - Fixed character encoding issues with the Rest parser.
+     - Fixed a character encoding issue in the test suite.
+
 0.15  2012-01-13T23:04:16Z
       - Changed the parsers to return `undef` if no content was parsed from a
         file.

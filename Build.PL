@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use Module::Build;
 
-Module::Build->new(
+my $build = Module::Build->new(
     module_name        => 'Text::Markup',
     license            => 'perl',
     create_makefile_pl => 'traditional',
@@ -15,8 +15,10 @@ Module::Build->new(
     requires => {
         'File::BOM'             => '0.14',
         'HTML::Entities'        => 0,
+        'IPC::Open3'            => 0,
         'perl'                  => 5.008001,
         'Pod::Simple::XHTML'    => '3.15',
+        'Symbol'                => 0,
         'Text::Markdown'        => '1.000004',
         'Text::MultiMarkdown'   => '1.000028',
         'Text::MediawikiFormat' => '1.0',
@@ -34,4 +36,6 @@ Module::Build->new(
             repository => 'http://github.com/theory/text-markup/tree/',
         }
     },
-)->create_build_script;
+);
+$build->add_build_element('py');
+$build->create_build_script;

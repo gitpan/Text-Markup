@@ -5,7 +5,7 @@ use strict;
 use Text::Markup::None;
 use Carp;
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 my %_PARSER_FOR;
 my %REGEX_FOR = (
@@ -312,9 +312,10 @@ In such a case, read in the file as raw bytes:
 
       open my $fh, '<:raw', $file or die "Cannot open $file: $!\n";
 
-The returned HTML, however, must be encoded. Please include an L<encoding
-declaration|http://en.wikipedia.org/wiki/Character_encodings_in_HTML>,
-such as a content-type C<< <meta> >> element:
+The returned HTML, however, B<must be encoded in UTF-8>. Please include an
+L<encoding
+declaration|http://en.wikipedia.org/wiki/Character_encodings_in_HTML>, such as
+a content-type C<< <meta> >> element:
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
@@ -453,7 +454,7 @@ David E. Wheeler <david@justatheory.com>
 
 =head1 Copyright and License
 
-Copyright (c) 2011 David E. Wheeler. Some Rights Reserved.
+Copyright (c) 2011-2012 David E. Wheeler. Some Rights Reserved.
 
 This module is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
