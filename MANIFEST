@@ -1,6 +1,7 @@
 Build.PL
 Changes
 lib/Text/Markup.pm
+lib/Text/Markup/Asciidoc.pm
 lib/Text/Markup/HTML.pm
 lib/Text/Markup/Markdown.pm
 lib/Text/Markup/Mediawiki.pm
@@ -19,6 +20,7 @@ README.md
 t/base.t
 t/empty.txt
 t/formats.t
+t/html/asciidoc.html
 t/html/html.html
 t/html/markdown.html
 t/html/mediawiki.html
@@ -27,6 +29,7 @@ t/html/pod.html
 t/html/rest.html
 t/html/textile.html
 t/html/trac.html
+t/markups/asciidoc.txt
 t/markups/html.txt
 t/markups/markdown.txt
 t/markups/mediawiki.txt
