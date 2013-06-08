@@ -4,7 +4,7 @@
       "David E. Wheeler <david@justatheory.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.120351",
+   "generated_by" : "Module::Build version 0.4005, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -34,6 +34,7 @@
          "requires" : {
             "File::BOM" : "0.14",
             "HTML::Entities" : "0",
+            "HTML::Tagset" : "0",
             "IPC::Open3" : "0",
             "Pod::Simple::XHTML" : "3.15",
             "Symbol" : "0",
@@ -49,47 +50,47 @@
    "provides" : {
       "Text::Markup" : {
          "file" : "lib/Text/Markup.pm",
-         "version" : "0.17"
+         "version" : "0.18"
       },
       "Text::Markup::Asciidoc" : {
          "file" : "lib/Text/Markup/Asciidoc.pm",
-         "version" : "0.17"
+         "version" : "0.18"
       },
       "Text::Markup::HTML" : {
          "file" : "lib/Text/Markup/HTML.pm",
-         "version" : "0.17"
+         "version" : "0.18"
       },
       "Text::Markup::Markdown" : {
          "file" : "lib/Text/Markup/Markdown.pm",
-         "version" : "0.17"
+         "version" : "0.18"
       },
       "Text::Markup::Mediawiki" : {
          "file" : "lib/Text/Markup/Mediawiki.pm",
-         "version" : "0.17"
+         "version" : "0.18"
       },
       "Text::Markup::Multimarkdown" : {
          "file" : "lib/Text/Markup/Multimarkdown.pm",
-         "version" : "0.17"
+         "version" : "0.18"
       },
       "Text::Markup::None" : {
          "file" : "lib/Text/Markup/None.pm",
-         "version" : "0.17"
+         "version" : "0.18"
       },
       "Text::Markup::Pod" : {
          "file" : "lib/Text/Markup/Pod.pm",
-         "version" : "0.17"
+         "version" : "0.18"
       },
       "Text::Markup::Rest" : {
          "file" : "lib/Text/Markup/Rest.pm",
-         "version" : "0.17"
+         "version" : "0.18"
       },
       "Text::Markup::Textile" : {
          "file" : "lib/Text/Markup/Textile.pm",
-         "version" : "0.17"
+         "version" : "0.18"
       },
       "Text::Markup::Trac" : {
          "file" : "lib/Text/Markup/Trac.pm",
-         "version" : "0.17"
+         "version" : "0.18"
       }
    },
    "release_status" : "stable",
@@ -105,5 +106,5 @@
          "url" : "http://github.com/theory/text-markup/tree/"
       }
    },
-   "version" : "0.17"
+   "version" : "0.18"
 }

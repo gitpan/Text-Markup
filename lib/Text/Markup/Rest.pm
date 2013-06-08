@@ -8,7 +8,7 @@ use constant WIN32  => $^O eq 'MSWin32';
 use Symbol 'gensym';
 use IPC::Open3;
 
-our $VERSION = '0.17';
+our $VERSION = '0.18';
 
 # Find Python (process stolen from App::Info).
 my ($PYTHON, $RST2HTML);
@@ -95,7 +95,6 @@ my @SPHINX_OPTIONS = qw(
 
     --dir-nested module
     --dir-nested function
-    --math-output HTML
     --output-encoding utf-8
 );
 # note: domains directive (last 2 options) incomplete

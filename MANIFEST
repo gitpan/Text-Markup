@@ -38,5 +38,3 @@ t/markups/pod.txt
 t/markups/rest.txt
 t/markups/textile.txt
 t/markups/trac.txt
-t/pod-coverage.t
-t/pod.t
