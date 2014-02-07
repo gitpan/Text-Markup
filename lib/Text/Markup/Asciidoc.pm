@@ -8,7 +8,7 @@ use Symbol 'gensym';
 use IPC::Open3;
 use utf8;
 
-our $VERSION = '0.18';
+our $VERSION = '0.19';
 
 # Find Asciidoc.
 my $ASCIIDOC;
@@ -51,9 +51,10 @@ FIND: {
 }
 
 # Arguments to pass to asciidoc.
+# Restore --safe if Asciidoc ever fixes it with the XHTML back end.
+# https://groups.google.com/forum/#!topic/asciidoc/yEr5PqHm4-o
 my @OPTIONS = qw(
     --no-header-footer
-    --safe
     --out-file -
     --attribute newline=\\n
 );
@@ -123,9 +124,9 @@ Text::Markup::Asciidoc - reStructuredText parser for Text::Markup
 
 This is the L<Asciidoc|http://www.methods.co.nz/asciidoc/> parser for
 L<Text::Markup>. It depends on the C<asciidoc> command-line application, for
-which there are many L<binary
-distributions|http://www.methods.co.nz/asciidoc/INSTALL.html>. It recognizes
-files with the following extensions as Asciidoc:
+which there are many
+L<binary distributions|http://www.methods.co.nz/asciidoc/INSTALL.html>. It
+recognizes files with the following extensions as Asciidoc:
 
 =over
 
@@ -143,7 +144,7 @@ David E. Wheeler <david@justatheory.com>
 
 =head1 Copyright and License
 
-Copyright (c) 2012 David E. Wheeler. Some Rights Reserved.
+Copyright (c) 2012-2014 David E. Wheeler. Some Rights Reserved.
 
 This module is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.

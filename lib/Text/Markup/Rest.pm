@@ -8,7 +8,7 @@ use constant WIN32  => $^O eq 'MSWin32';
 use Symbol 'gensym';
 use IPC::Open3;
 
-our $VERSION = '0.18';
+our $VERSION = '0.19';
 
 # Find Python (process stolen from App::Info).
 my ($PYTHON, $RST2HTML);
@@ -178,7 +178,7 @@ Daniele Varrazzo <daniele.varrazzo@gmail.com>
 
 =head1 Copyright and License
 
-Copyright (c) 2011-2012 Daniele Varrazzo. Some Rights Reserved.
+Copyright (c) 2011-2014 Daniele Varrazzo. Some Rights Reserved.
 
 This module is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.

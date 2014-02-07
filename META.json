@@ -4,7 +4,7 @@
       "David E. Wheeler <david@justatheory.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4005, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Module::Build version 0.4204",
    "license" : [
       "perl_5"
    ],
@@ -50,47 +50,47 @@
    "provides" : {
       "Text::Markup" : {
          "file" : "lib/Text/Markup.pm",
-         "version" : "0.18"
+         "version" : "0.19"
       },
       "Text::Markup::Asciidoc" : {
          "file" : "lib/Text/Markup/Asciidoc.pm",
-         "version" : "0.18"
+         "version" : "0.19"
       },
       "Text::Markup::HTML" : {
          "file" : "lib/Text/Markup/HTML.pm",
-         "version" : "0.18"
+         "version" : "0.19"
       },
       "Text::Markup::Markdown" : {
          "file" : "lib/Text/Markup/Markdown.pm",
-         "version" : "0.18"
+         "version" : "0.19"
       },
       "Text::Markup::Mediawiki" : {
          "file" : "lib/Text/Markup/Mediawiki.pm",
-         "version" : "0.18"
+         "version" : "0.19"
       },
       "Text::Markup::Multimarkdown" : {
          "file" : "lib/Text/Markup/Multimarkdown.pm",
-         "version" : "0.18"
+         "version" : "0.19"
       },
       "Text::Markup::None" : {
          "file" : "lib/Text/Markup/None.pm",
-         "version" : "0.18"
+         "version" : "0.19"
       },
       "Text::Markup::Pod" : {
          "file" : "lib/Text/Markup/Pod.pm",
-         "version" : "0.18"
+         "version" : "0.19"
       },
       "Text::Markup::Rest" : {
          "file" : "lib/Text/Markup/Rest.pm",
-         "version" : "0.18"
+         "version" : "0.19"
       },
       "Text::Markup::Textile" : {
          "file" : "lib/Text/Markup/Textile.pm",
-         "version" : "0.18"
+         "version" : "0.19"
       },
       "Text::Markup::Trac" : {
          "file" : "lib/Text/Markup/Trac.pm",
-         "version" : "0.18"
+         "version" : "0.19"
       }
    },
    "release_status" : "stable",
@@ -103,8 +103,8 @@
          "http://dev.perl.org/licenses/"
       ],
       "repository" : {
-         "url" : "http://github.com/theory/text-markup/tree/"
+         "url" : "http://github.com/theory/text-markup"
       }
    },
-   "version" : "0.18"
+   "version" : "0.19"
 }
